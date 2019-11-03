@@ -1,0 +1,17 @@
+.flex-container {
+	display: flex;
+
+	> div {
+		flex: 1;
+	}
+}
+
+.pdf-page-preview {
+	max-height: 85vh;
+}
+
+.pdf-viewport {
+	max-width: 1px;
+	max-height: 1px;
+	overflow: hidden;
+}

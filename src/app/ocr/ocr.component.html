@@ -1,0 +1,11 @@
+<div class="ocr-worker-starting" *ngIf="workerIsStarting || ocrIsRunning">
+	<div class="LoaderBalls">
+		<div class="LoaderBalls__item"></div>
+		<div class="LoaderBalls__item"></div>
+		<div class="LoaderBalls__item"></div>
+	</div>
+</div>
+<div class="ocr-tools" *ngIf="imgUrl && !ocrIsRunning">
+	<button (click)="onRunOcr_Click()">Run OCR 💯</button>
+</div>
+<div [innerHTML]="hocr" class="hocr-container"></div>
